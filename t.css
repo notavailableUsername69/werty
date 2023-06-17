@@ -1,0 +1,63 @@
+/* Add your CSS styles here */
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  border-color: chocolate;
+}
+
+button {
+  margin-top: 10px;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  color: rgb(172, 104, 36);
+}
+
+button {
+  background-color: rgb(139, 84, 10);
+  color: antiquewhite;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+  #game {
+    margin-top: 20px;
+  }
+  .row {
+    margin-bottom: 5px;
+  }
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+}
+
